@@ -25,7 +25,7 @@
         echo "<p>" . largest($numbers) . "</p>";
         echo "<p>" . average($numbers) . "</p>";
         printArray(removeDups($numbers));
-        //print_r(distribution($numbers));
+        print_r(distribution($numbers));
     ?>
 </body>
 </html>
