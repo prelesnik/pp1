@@ -33,26 +33,26 @@
         return $noDuplicates;
     }
 
-//    function distribution($array)
-//    {
-//        $noDuplicates = removeDups($array);
-//        sort($noDuplicates);
-//        $newArray = array();
-//
-//        foreach($noDuplicates as $val)
-//        {
-//            $count = 0;
-//
-//            foreach($array as $value)
-//            {
-//                if ($val == $value)
-//                {
-//                    $count += 1;
-//                }
-//            }
-//
-//            $newArray[$val] = $count;
-//        }
-//
-//        return $newArray;
-//    }
+    function distribution($array)
+    {
+        $noDuplicates = removeDups($array);
+        sort($noDuplicates);
+        $newArray = array();
+
+        foreach($noDuplicates as $val)
+        {
+            $count = 0;
+
+            foreach($array as $value)
+            {
+                if ($val == $value)
+                {
+                    $count += 1;
+                }
+            }
+
+            $newArray[$val] = $count;
+        }
+
+        return $newArray;
+    }
